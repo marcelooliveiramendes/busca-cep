@@ -1,0 +1,24 @@
+
+.wrapper{
+    width: 200px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .loading{
+        width: 60px;
+        height: 60px;
+        margin: 20px;
+        animation: loadingImage .7s infinite;
+    }
+    @keyframes loadingImage {
+        0% {
+            transform: rotate(0deg);
+        } 100% {
+            transform: rotate(360deg);
+        }
+    }
+}
